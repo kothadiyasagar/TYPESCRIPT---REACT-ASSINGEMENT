@@ -1,0 +1,31 @@
+{
+  "company": [
+    {
+      "id": "0aeda65d-29d9-4dc6-a426-a78ae2f20e5d",
+      "model": "lenovo ideaipad-slim 3",
+      "makeYear": "2019",
+      "operatingSystem": "Windows 11 ",
+      "screenHeight": "11",
+      "screenWidth":"10",
+      "price": "51000"
+    },
+    {
+      "id": "65c43363-e2b7-49aa-a30d-c478c244d126",
+      "model": "hp ryzen 5500u",
+      "makeYear": "2019",
+      "operatingSystem": "Windows 11 ",
+      "screenHeight": "11",
+      "screenWidth":"10",
+      "price": "56000"
+    },
+    {
+      "id": "da3a40e9-8412-46ee-a19e-bb7643b3ad41",
+      "model": "lenov ryzen",
+      "makeYear": "2020",
+      "operatingSystem": "Windows 11",
+      "screenHeight": "11.5",
+      "screenWidth":"10",
+      "price": "48500"
+    }
+  ]
+}
