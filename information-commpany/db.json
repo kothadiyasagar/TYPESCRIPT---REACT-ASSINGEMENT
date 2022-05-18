@@ -6,7 +6,7 @@
       "makeYear": "2019",
       "operatingSystem": "Windows 11 ",
       "screenHeight": "11",
-      "screenWidth":"10",
+      "screenWidth": "10",
       "price": "51000"
     },
     {
@@ -15,7 +15,7 @@
       "makeYear": "2019",
       "operatingSystem": "Windows 11 ",
       "screenHeight": "11",
-      "screenWidth":"10",
+      "screenWidth": "10",
       "price": "56000"
     },
     {
@@ -24,8 +24,17 @@
       "makeYear": "2020",
       "operatingSystem": "Windows 11",
       "screenHeight": "11.5",
-      "screenWidth":"10",
+      "screenWidth": "10",
       "price": "48500"
+    },
+    {
+      "id": "cba3c18f-a1ca-4563-ad1e-d513cc3fb64d",
+      "model": "dell",
+      "makeYear": "ryzen 4500u",
+      "operatingSystem": "Windows 10",
+      "screenHeight": "11",
+      "screenWidth": "10",
+      "price": "57000"
     }
   ]
 }

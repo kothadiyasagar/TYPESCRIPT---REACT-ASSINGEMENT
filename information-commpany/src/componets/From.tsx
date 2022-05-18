@@ -27,7 +27,7 @@ import { getEnvironmentData } from "worker_threads";
      }
  export  const From  = ()=>{
   const [leptop,setlaptop]=useState(defaultUser)
-  const [table, settable]=useState([])
+  const [table, settable]=useState<any>([])
      console.log(table)
   useEffect(()=>{
     getData()
@@ -77,11 +77,11 @@ import { getEnvironmentData } from "worker_threads";
      }
 
        const  sorting =(table:any)=>{
-        let  sort = table.sort((first:any, second:any) => 0 - (first.price > second.price ? 1 : -1));
-           console.log(sort,"sagar")
-           settable(sort)
+        table.sort((first:any, second:any) => (first.price > second.price ? 1 : -1));
+           console.log(table,"sagar")
+           settable([...table])
        }
-        console.log("sorting")
+        // console.log("sorting")
      return <div>
          <form  onSubmit={handleSubmit}>
             {/* <input type="text" value={model} name ="model" onChange={handleChange}/>  */}
@@ -107,8 +107,10 @@ import { getEnvironmentData } from "worker_threads";
                       <th>Price</th>
                     </tr>
                     </thead>
-             {table.map((elem:any,index:number)=>{
-               return(
+             
+              
+                {table.map((elem:any,index:number)=>{
+                  return(
                  <>
                    <tbody>
                  <tr>
@@ -122,8 +124,10 @@ import { getEnvironmentData } from "worker_threads";
                     </tr>
                     </tbody>
                  </>
-               )
-             })}
+                  )
+               
+             })}  
+               
              
               </Table>
               
