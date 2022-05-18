@@ -76,6 +76,12 @@ import { getEnvironmentData } from "worker_threads";
        
      }
 
+       const  sorting =(table:any)=>{
+        let  sort = table.sort((first:any, second:any) => 0 - (first.price > second.price ? 1 : -1));
+           console.log(sort,"sagar")
+           settable(sort)
+       }
+        console.log("sorting")
      return <div>
          <form  onSubmit={handleSubmit}>
             {/* <input type="text" value={model} name ="model" onChange={handleChange}/>  */}
@@ -87,6 +93,7 @@ import { getEnvironmentData } from "worker_threads";
             <input  placeholder="price"   value={leptop.price||""} onChange={(e)=>{handleChange("price",e.target.value)}}/>
             <input  type="submit" placeholder="submit" onSubmit={handleSubmit}/>
          </form>
+         <button onClick={()=>sorting(table)}>sorting price low to high</button>
            <div style={{margin:"auto",width:"70%"}}>
            <Table striped bordered hover>
            <thead>
